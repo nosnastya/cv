@@ -28,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1; 
     margin: 0;
-    font-family: 'Open Sans Condensed';
 }
 ol, ul {
     list-style: none;
@@ -69,9 +68,7 @@ table {
 
 
 
-/*****NAVIGATION
- 
- нихрена не работало)
+
 
 
 .navbar-brand {
@@ -79,7 +76,7 @@ table {
  font-style: bold;
 font-family: 'Open Sans Condensed';
 text-transform: uppercase;
-}*/
+}
 
 
 
@@ -91,7 +88,7 @@ HEADER
 .caption {
     position: relative;
     overflow: hidden;
-    height:300px;
+    height:400px;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
@@ -106,7 +103,7 @@ HEADER
 
 .caption__media:hover {
     position: absolute;
-    -webkit-transform: translateX( -webkit-calc(-100% - 10px) );
+    -webkit-transform: translateX( -webkit-calc(-100% - 20px) );
     transform: translateX( calc(-100% - 10px) );
     transition: -webkit-transform .35s ease-out;
     transition: transform .35s ease-out;
@@ -147,7 +144,10 @@ HEADER
 }
 
 .caption__overlay__title {
-    margin: 10px;
+vertical-align: middle;
+text-align: center;
+
+margin: 100px 0;
     -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
     transform: translateY( calc(-100% - 10px) );
     transition: -webkit-transform .35s ease-out;
@@ -168,7 +168,6 @@ ABOUT
 ************/
 
 .table-view {
-    padding-top: 10px;
     display: table;
     width: 100%;
     color: black;
@@ -227,16 +226,16 @@ ABOUT
     border-radius: 3px;
     background-color: #fff;
     color: #e85a25;
-    padding: 20px ;
+    padding: 20px;
     font-family: 'museo_sans_cyrl700';
     font-size: 100%;
     text-transform: capitalize;
-    margin: 20px 20px 0 80px;
-    cursor: default; 
+    cursor: default;
     text-align: center;
     width: 50%;
-   
+    margin: 20px auto;
 }
+
 .button:hover {
     background-color: #e85a25;
     color: #fff;
@@ -254,15 +253,14 @@ ABOUT
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 450px;
     clear: both;
-    max-width: 80%;
-    margin:auto
+    margin:auto;
+    padding: 100px 0;
 }
 .cursive-text {
     font-family: 'La Belle Aurore', cursive;
     font-size: 300%;
-    padding: 60px 0 0;
+    padding: 100px 0 0;
     text-align: center;
     color: #ffbacc;
 }
@@ -272,7 +270,6 @@ ABOUT
     color: white;
     font-family: 'La Belle Aurore', cursive;
     font-size: 300%;
-    padding: 60px 0 0;
     text-align: center;
 }
 /************ "SKILLS" END ************/
@@ -280,14 +277,13 @@ ABOUT
 /*********** REFERENCES START***********/
 
 .tabs_heading {
-    color: #e85a25;
+    color: #a7401a;
     font-style: bold;
     font-family: 'Open Sans Condensed'; 
     text-align: center;
     padding: 50px 0;
     height:50px;
     font-size: 200%;
-    border-bottom: 3px solid #bd4113;
 }
 /*----- Accordion -----*/
 .accordion, .accordion * {
@@ -329,7 +325,7 @@ ABOUT
 .accordion-section-title {
     border-bottom:none;
     display: block;
-    padding: 17px 30px;
+    padding: 25px 30px;
     background: #e85a25;
     text-decoration: none;
     color: white;
@@ -348,22 +344,32 @@ ABOUT
 }
 
 /*********** REFERENCES END***********/
-
+.looking {
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-family: 'Aleo_Light'; 
+    padding: 20px;
+    font-size: 120%;
+    cursor: default;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
 /*
 CV START
 ******************/
 .cvfile {
     background: white;
+    padding: 100px 0;
     background-attachment: fixed;
-    height: 100%;
     text-align: center;
     color: #f36767;
     text-transform: uppercase;
     font-size: 150%;
     font-family: 'Open Sans Condensed';
     text-align: center;
-    text-shadow:0px 1px 0px #1a1a1a;
-    margin-bottom: 30px;
+    text-shadow: 0px 1px 0px #1a1a1a;
 }
 
 .btncv {
