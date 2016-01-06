@@ -48,9 +48,7 @@ table {
 
 /*Body*/
 
-.red_text {
-    color:#7f364a;
-}
+
 
 .black_text{
     color:black;
@@ -67,20 +65,6 @@ table {
 
 
 
-
-
-
-
-.navbar-brand {
- color:#fff200;
- font-style: bold;
-font-family: 'Open Sans Condensed';
-text-transform: uppercase;
-}
-
-
-
-
 /****************
 HEADER
 *****************/
@@ -89,10 +73,8 @@ HEADER
     position: relative;
     overflow: hidden;
     height:400px;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    margin-bottom: 50px; 
 }
-
 
 .caption__media {
     display: block;
@@ -101,76 +83,27 @@ HEADER
     margin: auto;
 }
 
-.caption__media:hover {
-    position: absolute;
-    -webkit-transform: translateX( -webkit-calc(-100% - 20px) );
-    transform: translateX( calc(-100% - 10px) );
-    transition: -webkit-transform .35s ease-out;
-    transition: transform .35s ease-out;
-}
-
-
-.caption::before {
-    content: ' ';
-    position: absolute ; 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: transparent;
-    transition: background .35s ease-out;
-}
-
-.caption:hover::before {
-    background: rgba(0, 0, 0, .5);
-}
-
-
-.caption__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: white;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    transition: -webkit-transform .35s ease-out;
-    transition: transform .35s ease-out;
-}
-
-.caption:hover .caption__overlay {
-    transform: translateY(0);
-}
-
-.caption__overlay__title {
-vertical-align: middle;
-text-align: center;
-
-margin: 100px 0;
-    -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
-    transform: translateY( calc(-100% - 10px) );
-    transition: -webkit-transform .35s ease-out;
-    transition: transform .35s ease-out;
-}
-
-.caption:hover .caption__overlay__title {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-
-
 
 
 /************
 ABOUT
 ************/
-
+.parallax {
+    background: url(images/bwflower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clear: both;
+    margin:auto;
+    padding: 50px 0 ;
+}
 .table-view {
     display: table;
-    width: 100%;
-    color: black;
+    width: 85%;
+    margin: auto;
+    color: white;
+    vertical-align: middle;
 }
 
 *[class *= 'table-cell-view'] {
@@ -183,18 +116,24 @@ ABOUT
 
 .grow:hover{
    transform: scale(1.3);
+   color: #e85a25;
 }
 
+.glyphicon {
+    font-size: 200%;
+}
 .table-cell-view-33 {
     width: 33%;
-    padding-bottom: 25px;
-    font-size: 120%;
+    font-size: 100%;
 }
 
-.table-cell-view-100 {
-    width: 100%;
-}
 
+.table-row{
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+}
 
 .offers {
     bottom: 0;
@@ -205,21 +144,23 @@ ABOUT
     vertical-align: middle;
     text-align: center;
     text-transform: capitalize;
-    font-family: 'Aleo_Light';
+    /* font-family: 'Yanone Kaffeesatz';*/
+    font-size: 150%;
+    text-align: center;
+  font-family:'Roboto', sans-serif;
+    
+    font-weight: 100; 
 }
 
+}
+/*
 .offers a.heading-regular_text {
     line-height: 105px;
 }
 
-.table-cell-top {
-    font-size: 200%;
-}
 
-.about {
-    background: white;
-    color: black;
-}
+
+*/
 
 .button {
     border: 1px solid #e85a25;
@@ -247,108 +188,137 @@ ABOUT
 "SKILLS" START
 ************/
 
-.parallax {
-    background: url(images/bwflower.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    clear: both;
+
+.orange {
+    background-color: #e85a25;
     margin:auto;
-    padding: 100px 0;
+    padding: 50px 0 50px;
 }
-.cursive-text {
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 300%;
-    padding: 100px 0 0;
+.table-orange {
+    vertical-align: middle;
     text-align: center;
-    color: #ffbacc;
-}
-
-
-.cursive-text_white{
     color: white;
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 300%;
-    text-align: center;
+    border-spacing: 20px;
+    border-collapse: separate;
+    margin:auto;
 }
+
+
+td {
+     vertical-align: middle;
+    color: white;
+    height: 130px;
+    width: 200px;
+    margin-top: 100px; 
+    margin: auto; 
+    padding: 6px;
+    border: thin solid white;
+    text-align: center;
+
+}
+
+
+
+.header-text {
+    font-family:'Roboto', sans-serif;
+    font-size: 350%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #e85a25;
+    font-weight: 100; 
+}
+
+
+
+.text1 {
+font-family: 'Yanone Kaffeesatz';
+    font-size: 250%;
+    text-align: center;
+font-weight: 200; 
+}
+.text2 {
+   color: white;
+font-family: 'Sonsie One', cursive; 
+    font-size: 200%;
+    text-align: center;
+
+}
+.text3 {
+    font-family: 'Yanone Kaffeesatz';
+  font-size: 250%;
+  text-transform: uppercase;
+    text-align: center;
+  font-weight: 400; 
+  
+}
+.text4 {
+font-family: 'Amatic SC', cursive;
+  font-size: 260%;
+    text-align: center;
+    vertical-align: middle;
+}
+.text5 {
+ font-family: 'Dorsa', sans-serif; 
+    font-size: 300%;
+
+    
+}
+.text6 {
+font-family: 'Elsie Swash Caps';
+  font-size: 250%;
+    text-align: center;
+
+}
+
 /************ "SKILLS" END ************/
 
-/*********** REFERENCES START***********/
+/*********** REFERENCES START**********
 
-.tabs_heading {
-    color: #a7401a;
-    font-style: bold;
-    font-family: 'Open Sans Condensed'; 
-    text-align: center;
-    padding: 50px 0;
-    height:50px;
-    font-size: 200%;
-}
 /*----- Accordion -----*/
 .accordion, .accordion * {
     -webkit-box-sizing:border-box; 
     -moz-box-sizing:border-box; 
     box-sizing:border-box;
 }
- 
-.accordion {
-    overflow:hidden;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-    border-radius:3px;
-    background: white;
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: 100px;
-    text-shadow:0px 1px 0px #fff;
-}
- 
-/*----- Section Titles -----*/
-.accordion-section-title {
-    width:100%;
-    padding:15px;
-    display:inline-block;
-    border-bottom:1px solid #1a1a1a;
-    background:#e85a25;
-    transition:all linear 0.15s;
-    /* Type */
-    font-size:1.200em;
-    text-shadow:0px 1px 0px #f36767;
-    color: #fff;
-}
- 
+
+---- Section Titles -----*/
+
+
 .accordion-section-title:hover {
-    background: rgb(78, 74, 99);
+    background: #000;
     color:white;
 }
  
 .accordion-section-title {
-    border-bottom:none;
-    display: block;
+
+    width:100%;
+    display:inline-block;
     padding: 25px 30px;
-    background: #e85a25;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 150%;
-    font-family: 'Open Sans Condensed';
+    background: white;
     text-align: center;
-    height: 80px;
+    color: #e85a25;
+    text-transform: uppercase;
+    font-family:'Yanone Kaffeesatz';
+    font-weight: 200; 
+    font-size: 250%;
 }
  
 /*----- Section Content -----*/
 .accordion-section-content {
     padding:15px;
-    display:none;
+    display:inline-block;
     text-align: center;
+width:100%;
 }
+
 
 /*********** REFERENCES END***********/
 .looking {
     vertical-align: middle;
     text-align: center;
     color: white;
-    font-family: 'Aleo_Light'; 
+    font-family:'Roboto';
+    font-weight: 100; 
     padding: 20px;
     font-size: 120%;
     cursor: default;
@@ -364,12 +334,12 @@ CV START
     padding: 100px 0;
     background-attachment: fixed;
     text-align: center;
-    color: #f36767;
+    color: #e85a25;
     text-transform: uppercase;
     font-size: 150%;
-    font-family: 'Open Sans Condensed';
+    font-family:'Yanone Kaffeesatz';
+    font-weight: 200; 
     text-align: center;
-    text-shadow: 0px 1px 0px #1a1a1a;
 }
 
 .btncv {
@@ -379,8 +349,9 @@ CV START
     margin: 50px 0 0 0;
     text-align: center;
     vertical-align: middle;
-    font-family: 'Open Sans Condensed';
-    background-color: #f36767;
+    font-family:'Yanone Kaffeesatz';
+    font-weight: 200; 
+    background-color: #e85a25;
     color: white;
 }
 
@@ -390,8 +361,8 @@ CV START
 
 
 footer {
-    height: 280px;
-    background-color: #f36767;
+    height: 250px;
+    background-color: #1b1b1b;
     padding-top: 50px;
     padding-bottom: 10px;
     -webkit-box-sizing: border-box;
@@ -403,11 +374,18 @@ footer {
     text-align: center;
 }
 
-.footer-first-line {
-    font-family: 'museo_sans_cyrl700';
+.footer-line {
+    font-family:'Roboto';
+    font-weight: 100;
     color: #fff;
-    font-size: 150%;
+   
 }
+.footer-line-big {
+font-family:'Roboto';
+    font-weight: 100;
+    color: #fff; 
+    font-size: 150%;
+    }
 
 .footer-second-line {
     margin-top: 15px;
@@ -432,7 +410,8 @@ h1.icon{
 }
 
 
-/*****--------------*************
+
+/*
 @media screen and (max-width: 992px){
     
     .logo {
@@ -450,9 +429,7 @@ h1.icon{
     }
 }
 
-/************
-*tablets*
-***********
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
     h1.heading.logo {
@@ -462,9 +439,7 @@ h1.icon{
         padding: 0;
     }
 }
-/***********
-*phones*
-***********
+
 @media screen and (min-device-width: 414px) and (max-device-width: 767px) and (orientation: portrait) {
 
     h1.heading.logo {
